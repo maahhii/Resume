@@ -1,0 +1,64 @@
+* {box-sizing: border-box;}
+
+body {margin: 0; padding: 20px; background-color: #eef2f0; color: #1d2b2a; font-family: Arial, sans-serif; 
+    font-size: 17px; line-height: 1.6;}
+
+.page {max-width: 1000px; margin: 0 auto; background-color: white; border: 1px solid #c9d6cf;}
+
+h1 {font-family: Georgia, serif; font-size: 40px; margin: 0; color: white;}
+
+h2 {font-family: Georgia, serif; font-size: 20px; color: #1f5c4a; margin-top: 0; margin-bottom: 12px; padding-bottom: 6px; 
+    border-bottom: 3px solid #7bb661;}
+
+h3 {font-family: Georgia, serif; font-size: 16px; margin-top: 16px; margin-bottom: 6px;}
+
+.pg-header {display: flex; align-items: center; gap: 28px; padding: 30px; background-color: #1f5c4a; color: white;}
+
+.photo {width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; object-fit: cover; background-color: #e8f1ec;}
+
+.doc-title {margin: 0; color: #cfe8d6; text-align: center;}
+
+.tagline {margin-top: 0; margin-bottom: 14px; font-weight: bold;}
+
+.intro h2 {color: white; font-size: 18px;}
+
+.layout {display: grid; grid-template-columns: 300px 1fr;}
+
+.sidebar {background-color: #e8f1ec; padding: 25px;}
+
+.content {padding: 25px 30px;}
+
+section {margin-bottom: 28px;}
+ul {padding-left: 20px;}
+li {margin-bottom: 6px;}
+
+.plain-list {list-style: none; padding-left: 0;}
+
+.tag-list {list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 6px;}
+
+.tag-list li {padding: 3px 12px; font-size: 14px; background-color: white; border: 1px solid #1f5c4a; border-radius: 15px; 
+    margin-bottom: 0;}
+
+.tables {overflow-x: auto;}
+
+table {width: 100%; border-collapse: collapse;}
+th, td {padding: 10px; text-align: left; border: 1px solid #c9d6cf;}
+th {background-color: #1f5c4a; color: white;}
+tbody tr:nth-child(even) {background-color: #e8f1ec;}
+
+.project {padding-left: 15px; margin-bottom: 18px; border-left: 4px solid #7bb661;}
+.project h3 {margin-top: 0;}
+
+a {text-decoration: none;}
+a:link    { color: blue; }     
+a:visited { color: purple; }         
+a:hover   { color: red; text-decoration: underline; }  
+a:active  { color: teal; }            
+
+.page-footer {padding: 14px; text-align: center; font-size: 14px; border-top: 1px solid #c9d6cf;}
+.page-footer p {margin: 0;}
+
+@media (max-width: 800px) {.layout {grid-template-columns: 1fr;}}
+
+@media (max-width: 600px) {body {padding: 0;} .page-header {flex-direction: column; text-align: center;} h1 {font-size: 32px;} 
+.content {padding: 20px;}}
